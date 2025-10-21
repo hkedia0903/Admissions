@@ -7,6 +7,10 @@ import pandas as pd
 import warnings
 warnings.filterwarnings("ignore")
 
+password_guess = st.text_input("What is the Password?")
+if password_guess != st.secrets["password"]:
+     st.stop()
+
 st.title('Graduate Admission Predictor')
 st.write("This app uses multiple inputs to predict the probability of admission to grad school")
 
