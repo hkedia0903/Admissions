@@ -59,7 +59,7 @@ with tab2:
  # Tab 4: Classification Report
 with tab3:
      st.write("### Classification Report")
-     report_df = pd.read_csv('admission_predict.csv', index_col = 0).transpose()
+     report_df = pd.read_csv('Admission_Predict.csv', index_col = 0).transpose()
      st.dataframe(report_df.style.background_gradient(cmap='RdBu').format(precision=2))
      st.caption("Classification Report: Precision, Recall, F1-Score, and Support for each species.")
 
